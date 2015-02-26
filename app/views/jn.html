@@ -1,0 +1,16 @@
+<p>This is the jn view.</p>
+
+<input type="text" class="form-control filter" ng-model="search" placeholder="Search"/>
+
+<table class="table">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>money</th>
+  </tr>
+  <tr ng-repeat="d in data | filter:search">
+    <td>{{d.id}}</td>
+    <td>{{d.name}}</td>
+    <td>{{d.money}}</td>
+  </tr>
+</table>
